@@ -21,7 +21,7 @@ const instructors = [
     "name": "Joel Hooks",
     "handle": "@jhooks",
     "bio": "Joel is a software developer living in Fort Worth, Texas. He's passionate about home educating his 4 kids and all things technology. He's also keeps egghead.io up and running for your learning pleasure!",
-    "site": "Google+",
+    "site": "http://joelhooks.com/",
     "avatar": "https://d2eip9sf3oo6c2.cloudfront.net/instructors/avatars/000/000/003/bio/joel_head.jpg?1421260465",
     "videos": [
       "10bdf932",
