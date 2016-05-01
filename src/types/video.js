@@ -32,7 +32,7 @@ export const videoType = new GraphQLObjectType({
       description: 'A couple sentences summarizing the objective of the video.',
     },
     duration: {
-      type: GraphQLInt,
+      type: GraphQLString,
       description: 'The duration of the video.',
     },
     instructor: {
