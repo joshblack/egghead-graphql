@@ -6,6 +6,7 @@ import { getAllOfVideo, getVideo } from '../data/videos';
 export const videoFields = {
   allVideos: {
     type: new GraphQLList(videoType),
+    description: 'Get all of the videos on egghead.',
     resolve: getAllOfVideo,
   },
   video: {
@@ -13,6 +14,7 @@ export const videoFields = {
     args: {
       id: {
         type: new GraphQLNonNull(GraphQLID),
+        description: 'Get a specific video on egghead.',
         description: 'The id of the video',
       },
     },
