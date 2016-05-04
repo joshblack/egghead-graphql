@@ -1,4 +1,10 @@
-import { GraphQLID, GraphQLList, GraphQLObjectType, GraphQLString } from 'graphql';
+import {
+  GraphQLID,
+  GraphQLList,
+  GraphQLNonNull,
+  GraphQLObjectType,
+  GraphQLString
+} from 'graphql';
 import { videoType } from './video';
 import { courseType } from './course';
 
@@ -9,7 +15,7 @@ export const instructorType = new GraphQLObjectType({
   description: 'A member of Egghead who produces videos to help teach subscribers.',
   fields: () => ({
     id: {
-      type: GraphQLID,
+      type: new GraphQLNonNull(GraphQLID),
     },
     name: {
       type: GraphQLString,

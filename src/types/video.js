@@ -2,6 +2,7 @@ import {
   GraphQLID,
   GraphQLInt,
   GraphQLList,
+  GraphQLNonNull,
   GraphQLObjectType,
   GraphQLString
 } from 'graphql';
@@ -17,7 +18,7 @@ export const videoType = new GraphQLObjectType({
   description: 'An instructional video made by an instructor at Egghead for subscribers.',
   fields: () => ({
     id: {
-      type: GraphQLID,
+      type: new GraphQLNonNull(GraphQLID),
     },
     title: {
       type: GraphQLString,
