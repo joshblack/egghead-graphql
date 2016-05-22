@@ -187,6 +187,5 @@ const videos = [
   }
 ];
 
-const { getAllOfVideo, getVideo } = resource('Video', videos);
+export const Video = resource('Video', videos);
 
-export { getAllOfVideo, getVideo };

@@ -359,18 +359,7 @@ const subscribers = [
   }
 ];
 
-const {
-  getAllOfSubscriber,
-  getSubscriber,
-  setKeyOnSubscriber
-} = resource('Subscriber', subscribers);
-
-export {
-  getAllOfSubscriber,
-  getSubscriber,
-  setKeyOnSubscriber,
-};
-
+export const Subscriber = resource('Subscriber', subscribers);
 
 // Generator Logic
 

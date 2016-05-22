@@ -438,6 +438,4 @@ const instructors = [
   },
 ];
 
-const { getAllOfInstructor, getInstructor } = resource('Instructor', instructors);
-
-export { getAllOfInstructor, getInstructor };
+export const Instructor = resource('Instructor', instructors);
